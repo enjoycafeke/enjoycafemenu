@@ -1,3 +1,5 @@
+import { haileImage } from '../lib/images';
+import foodItems from './haile-food-items.json';
 import type { Branch, BranchId, Category, Product } from '../types/menu';
 
 export const BRAND = {
@@ -7,6 +9,8 @@ export const BRAND = {
 } as const;
 
 export const BRANCHES: readonly Branch[] = [
+  { id: 'delamere', name: 'Delamere', menuSource: 'Awaiting approved Delamere menu', heroImage: '/brand/enjoy-cafe-mark.svg', verification: 'Menu pending approval; no unverified prices published' },
+
   {
     id: 'imara-daima',
     name: 'Imara Daima',
@@ -16,7 +20,7 @@ export const BRANCHES: readonly Branch[] = [
   },
   {
     id: 'cbd',
-    name: 'CBD',
+    name: 'Haile CBD',
     menuSource: 'https://www.ubereats.com/ke/store/enjoy-cafe-cbd/pvHR24NxU1aqET0Q4jifyw',
     heroImage: 'https://tb-static.uber.com/prod/image-proc/processed_images/5db0377872502fd32365764833d3d6bc/bb3c0a72d9475b425c5ee9e6ea716d2f.webp',
     verification: 'Partial currently verified public listing'
@@ -38,13 +42,19 @@ export const BRANCHES: readonly Branch[] = [
 ] as const;
 
 const gallery = {
-  cover: 'https://images.pixieset.com/080347811/7983238e6c081d2be8166d9d739274ab-cover.jpg',
-  imara: 'https://tb-static.uber.com/prod/image-proc/processed_images/15c6d0f98fc01ee688b08567ebcc2946/bb3c0a72d9475b425c5ee9e6ea716d2f.webp',
-  cbd: 'https://tb-static.uber.com/prod/image-proc/processed_images/5db0377872502fd32365764833d3d6bc/bb3c0a72d9475b425c5ee9e6ea716d2f.webp',
-  karen: 'https://tb-static.uber.com/prod/image-proc/processed_images/7a5a8eabb3aa39aafaef6e0d1f864ca7/bb3c0a72d9475b425c5ee9e6ea716d2f.webp'
+  cover: '/brand/enjoy-cafe-mark.svg',
+  imara: '/brand/enjoy-cafe-mark.svg',
+  cbd: '/brand/enjoy-cafe-mark.svg',
+  karen: '/brand/enjoy-cafe-mark.svg'
 } as const;
 
 export const CATEGORIES: readonly Category[] = [
+  { id: 'breakfast', name: 'Breakfast', eyebrow: 'Start your day', mediaSource: '', image: gallery.cover },
+  { id: 'food-combos', name: 'Food Combos', eyebrow: 'Better together', mediaSource: '', image: gallery.cover },
+  { id: 'traditional-sides', name: 'Traditional Sides', eyebrow: 'Local favourites', mediaSource: '', image: gallery.cover },
+  { id: 'breakfast', name: 'Breakfast', eyebrow: 'Start your day', mediaSource: '', image: gallery.cover },
+  { id: 'food-combos', name: 'Food Combos', eyebrow: 'Better together', mediaSource: '', image: gallery.cover },
+  { id: 'traditional-sides', name: 'Traditional Sides', eyebrow: 'Local favourites', mediaSource: '', image: gallery.cover },
   { id: 'lunch', name: 'Lunch', eyebrow: 'Proper plates', mediaSource: 'https://marketingmastery.pixieset.com/enjoycafetakeawayitems/', image: gallery.imara },
   { id: 'hot-snacks', name: 'Hot Snacks', eyebrow: 'Quick favourites', mediaSource: 'https://marketingmastery.pixieset.com/enjoycafetakeawayitems/', image: gallery.cover },
   { id: 'wraps-rolls', name: 'Wraps & Rolls', eyebrow: 'Roll with it', mediaSource: 'https://marketingmastery.pixieset.com/enjoycafedrinkscampaignshoot/sandwiches/', image: gallery.karen },
@@ -60,11 +70,6 @@ export const CATEGORIES: readonly Category[] = [
   { id: 'milkshakes-icecream', name: 'Milkshakes & Ice Cream', eyebrow: 'Shake things up', mediaSource: 'https://marketingmastery.pixieset.com/enjoycafedrinkscampaignshoot/milkshakes/', image: gallery.imara }
 ] as const;
 
-const imageByCategory = Object.fromEntries(CATEGORIES.map((item) => [item.id, item.image])) as Record<string, string>;
-
-const foodImage = (tags: string, lock: number): string =>
-  `https://loremflickr.com/960/720/${tags.split(/\s+/).filter(Boolean).join(',')},food?lock=${lock}`;
-
 const product = (
   id: string,
   category: string,
@@ -73,8 +78,8 @@ const product = (
   cbd?: number,
   karen?: number,
   note?: string,
-  imageTags?: string,
-  lock = 1,
+  _imageTags?: string,
+  _lock = 1,
   haile?: number
 ): Product => ({
   id,
@@ -87,11 +92,16 @@ const product = (
     ...(haile !== undefined ? { haile } : {})
   },
   ...(note ? { note } : {}),
-  image: foodImage(imageTags ?? `${name} restaurant`, lock),
-  fallbackImage: imageByCategory[category] ?? gallery.cover
+  image: haileImage(name, id) ?? '/brand/enjoy-cafe-mark.svg',
+  fallbackImage: '/brand/enjoy-cafe-mark.svg'
 });
 
 export const PRODUCTS: readonly Product[] = [
+  ...foodItems.map(item => ({
+    id: item.id, category: item.category, name: item.name,
+    prices: { haile: item.price ?? 0 }, pricePending: item.price === null,
+    note: item.note, image: item.image, fallbackImage: '/brand/enjoy-cafe-mark.svg'
+  })),
   product('tavis-chicken-wings', 'lunch', 'Tavis Chicken Wings', 550, 550, 550, 'Chicken wings glazed with a sweet and savory sauce.', 'glazed chicken wings restaurant', 101),
   product('vegetable-rice-beef-stew', 'lunch', 'Vegetable Rice + Beef Stew', 550, 550, 550, 'Vegetable rice served with beef stew.', 'beef stew rice vegetables', 102),
   product('bhajia-passion-combo', 'lunch', 'Bhajia + Passion Juice', 750, undefined, 550, 'Bhajia served with passion juice.', 'bhajia fritters passion juice', 103),
@@ -229,12 +239,18 @@ export const PRODUCTS: readonly Product[] = [
 
 export const FEEDBACK_AREAS = ['Food & Beverage', 'Service Quality', 'Atmosphere', 'Entertainment', 'Staff / Waiter'] as const;
 
+export const priorityCategories = (branchId: BranchId): readonly string[] => {
+  if (branchId === 'haile' || branchId === 'cbd') return ['coffee-hot','herbal-drinks','drink-combos','breakfast','hot-snacks','wraps-rolls','lunch','food-combos','traditional-sides','pastries','donuts','cakes-muffins','iced-drinks','signature-drinks','smoothies-juices','milkshakes-icecream','wraps-rolls','lunch'];
+  if (branchId === 'imara-daima') return ['signature-drinks','iced-drinks','drink-combos','smoothies-juices','coffee-hot','lunch','hot-snacks','wraps-rolls','pastries'];
+  return ['lunch','wraps-rolls','hot-snacks','drink-combos','coffee-hot','herbal-drinks','pastries','cakes-muffins','donuts','iced-drinks','signature-drinks','smoothies-juices','milkshakes-icecream'];
+};
 export const productsForBranch = (branchId: BranchId): readonly Product[] =>
-  PRODUCTS.filter((item) => item.prices[branchId] !== undefined);
+  PRODUCTS.filter((item) => item.prices[branchId] !== undefined)
+   .sort((a,b) => priorityCategories(branchId).indexOf(a.category) - priorityCategories(branchId).indexOf(b.category));
 
 export const categoriesForBranch = (branchId: BranchId): readonly Category[] => {
   const ids = new Set(productsForBranch(branchId).map((item) => item.category));
-  return CATEGORIES.filter((category) => ids.has(category.id));
+  return CATEGORIES.filter((category) => ids.has(category.id)).sort((a,b) => priorityCategories(branchId).indexOf(a.id) - priorityCategories(branchId).indexOf(b.id));
 };
 
 export const branchById = (branchId: BranchId): Branch =>

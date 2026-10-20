@@ -1,0 +1,11 @@
+Image name,Folder,Verification note
+Brewed Kenyan Tea,Quick_Bites/Tea,Not a requested standalone item in the next batch
+Beef Kebab,Quick_Bites/Kebabs,Not a requested standalone item in the next batch
+Brewed Kenyan Tea + Beef Kebab,Combos/Tea_and_Kebab,Matches requested combo
+Hot Dog,Quick_Bites/Hotdogs,Not a requested standalone item in the next batch
+Hot Dog + Fresh Juice,Combos/Hotdog_and_Juice,Matches requested combo
+Glazed Donut,Pastries/Donuts,Not on the six-flavour list in source menu
+Chocolate Donut,Pastries/Donuts,Not on the six-flavour list in source menu
+Strawberry Donut,Pastries/Donuts,Not on the six-flavour list in source menu
+Croissant,Pastries/Croissants,"Original menu names plain/chocolate varieties, this image says Croissant"
+Chocolate Muffin,Pastries/Muffins,Not on source menu as named

@@ -31,13 +31,13 @@ export function PicksPanel({ open, onClose, branchId, branchName, products, onRe
   return (
     <ModalShell open={open} onClose={onClose} title="My Picks">
       {products.length === 0 ? (
-        <div className="rounded-[1.4rem] border border-dashed border-white/15 p-7 text-center text-sm leading-6 text-white/45">
+        <div className="panel-empty rounded-[1.4rem] border border-dashed border-white/15 p-7 text-center text-sm leading-6 text-white/45">
           Nothing here yet. Add anything that catches your eye.
         </div>
       ) : (
-        <div className="space-y-3">
+        <div className="picks-stack space-y-3">
           {products.map((product) => (
-            <div key={product.id} className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+            <div key={product.id} className="pick-row flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
               <button type="button" className="min-w-0 flex-1 text-left" onClick={() => { onOpenProduct(product); onClose(); }}>
                 <p className="truncate font-bold text-white">{product.name}</p>
                 <p className="mt-1 text-sm font-bold text-[#ff4058]">{formatKES(product.prices[branchId] ?? 0)}</p>
@@ -45,7 +45,7 @@ export function PicksPanel({ open, onClose, branchId, branchName, products, onRe
               <button className="text-button" type="button" onClick={() => onRemove(product.id)}>Remove</button>
             </div>
           ))}
-          <div className="mt-5 flex items-center justify-between rounded-2xl bg-white p-5 text-black">
+          <div className="total-card mt-5 flex items-center justify-between rounded-2xl bg-white p-5 text-black">
             <span className="text-sm font-black uppercase tracking-[0.18em]">Total</span>
             <strong className="text-2xl">{formatKES(total)}</strong>
           </div>

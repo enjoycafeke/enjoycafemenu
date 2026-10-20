@@ -1,4 +1,4 @@
-export type BranchId = 'imara-daima' | 'cbd' | 'karen' | 'haile';
+export type BranchId = 'imara-daima' | 'cbd' | 'karen' | 'haile' | 'delamere';
 
 export interface Branch {
   id: BranchId;
@@ -22,6 +22,7 @@ export interface Product {
   name: string;
   prices: Partial<Record<BranchId, number>>;
   note?: string;
+  pricePending?: boolean;
   image: string;
   fallbackImage: string;
 }

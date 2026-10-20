@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">Enjoy Cafe</title>
+  <desc id="desc">Enjoy Cafe brand logo</desc>
+  <rect width="128" height="128" rx="36" fill="#2d1c14"/>
+  <path d="M38 51h47v23c0 14-10 24-24 24S38 88 38 74V51Z" fill="none" stroke="#fff4e8" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M85 59h7c10 0 16 6 16 15s-6 15-16 15h-9" fill="none" stroke="#fff4e8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M51 34c-6-7 5-10 0-18M67 34c-6-7 5-10 0-18M83 34c-6-7 5-10 0-18" fill="none" stroke="#f0b45f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M31 108h68" stroke="#f0b45f" stroke-width="7" stroke-linecap="round"/>
+  <text x="158" y="79" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="-2" fill="#2d1c14">Enjoy Cafe</text>
+</svg>

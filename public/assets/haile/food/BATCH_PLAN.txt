@@ -1,0 +1,12 @@
+HAILE FOOD — MASTER BATCH PLAN (based on the 17-page supplied menu)
+All subsequent ZIPs must start at Haile_Food/ and contain only additions.
+Batch 01: Page 3 — Quick bites, breakfast pancakes, savoury pies and root sides (5 menu entries)
+Batch 02: Page 4 — Eggroll Chicken, Chicken Burger, Chicken Burrito, Rolex, Chicken Sandwich (5)
+Batch 03: Page 5 — Beef Samosa, Mandazi, Chapati, Beef Sausage, and Samosa+Vanilla Milkshake combo (5)
+Batch 04: Pages 6–8 — Beef Bourguignon meal, Pilau, and verified plated-meal combinations (review ambiguous pages/prices separately)
+Batch 05: Pages 9–12 — Snack and meal combinations, matched exactly to this food menu; avoid duplicates within Food collection
+Batch 06: Page 13 — Six donut varieties (single variants individually)
+Batch 07: Page 14 — Cinnamon Roll, Chocolate Croissant, Plain Croissant, Tea Scone, Rockbun, Coconut Crunch
+Batch 08: Page 15 — Cookies, Lemon Cake, Marble Cake, Red Velvet Cake, Muffin, Black Forest Cake; donut listings repeated here are not recreated
+Pages 1–2 and 16–17 are non-food marketing/events pages and are outside item poster batches.
+Unverified food photos must never be assigned to a specific variety.

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "haile-food-breakfast-chapati-chapati",
+    "category": "breakfast",
+    "name": "Chapati",
+    "price": 50,
+    "image": "/assets/haile/food/Breakfast/Chapati/Chapati.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-breakfast-mandazi-mandazi",
+    "category": "breakfast",
+    "name": "Mandazi",
+    "price": 40,
+    "image": "/assets/haile/food/Breakfast/Mandazi/Mandazi.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-breakfast-pancakes-pancake",
+    "category": "breakfast",
+    "name": "Pancake",
+    "price": 100,
+    "image": "/assets/haile/food/Breakfast/Pancakes/Pancake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-breakfast-chapati-and-egg-rolex",
+    "category": "breakfast",
+    "name": "Rolex",
+    "price": 100,
+    "image": "/assets/haile/food/Breakfast/Chapati_and_Egg/Rolex.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-kebabs-beef-kebab",
+    "category": "hot-snacks",
+    "name": "Beef Kebab",
+    "price": null,
+    "image": "/assets/haile/food/Quick_Bites/Kebabs/Beef_Kebab.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-samosas-beef-samosa",
+    "category": "hot-snacks",
+    "name": "Beef Samosa",
+    "price": 80,
+    "image": "/assets/haile/food/Quick_Bites/Samosas/Beef_Samosa.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-sausages-beef-sausage",
+    "category": "hot-snacks",
+    "name": "Beef Sausage",
+    "price": 70,
+    "image": "/assets/haile/food/Quick_Bites/Sausages/Beef_Sausage.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-burgers-chicken-burger",
+    "category": "hot-snacks",
+    "name": "Chicken Burger",
+    "price": 350,
+    "image": "/assets/haile/food/Quick_Bites/Burgers/Chicken_Burger.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-hotdogs-enjoy-hotdog",
+    "category": "hot-snacks",
+    "name": "Enjoy Hotdog",
+    "price": 200,
+    "image": "/assets/haile/food/Quick_Bites/Hotdogs/Enjoy_Hotdog.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-hotdogs-hotdog",
+    "category": "hot-snacks",
+    "name": "Hotdog",
+    "price": 200,
+    "image": "/assets/haile/food/Quick_Bites/Hotdogs/Hotdog.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-kebabs-tavis-beef-kebab",
+    "category": "hot-snacks",
+    "name": "Tavis Beef Kebab",
+    "price": 120,
+    "image": "/assets/haile/food/Quick_Bites/Kebabs/Tavis_Beef_Kebab.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-wraps-chicken-burrito",
+    "category": "wraps-rolls",
+    "name": "Chicken Burrito",
+    "price": 150,
+    "image": "/assets/haile/food/Quick_Bites/Wraps/Chicken_Burrito.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-sandwiches-chicken-sandwich",
+    "category": "wraps-rolls",
+    "name": "Chicken Sandwich",
+    "price": 250,
+    "image": "/assets/haile/food/Quick_Bites/Sandwiches/Chicken_Sandwich.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-quick-bites-wraps-eggroll-chicken",
+    "category": "wraps-rolls",
+    "name": "Eggroll Chicken",
+    "price": 170,
+    "image": "/assets/haile/food/Quick_Bites/Wraps/Eggroll_Chicken.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-main-meals-rice-and-beef-vegetable-rice-and-beef-bourguignon",
+    "category": "lunch",
+    "name": "Vegetable Rice + Beef Bourguignon",
+    "price": null,
+    "image": "/assets/haile/food/Main_Meals/Rice_and_Beef/Vegetable_Rice_and_Beef_Bourguignon.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-samosa-combos-2-beef-samosas-and-vanilla-milkshake",
+    "category": "food-combos",
+    "name": "2 Beef Samosas + Vanilla Milkshake",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Samosa_Combos/2_Beef_Samosas_and_Vanilla_Milkshake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-bhajia-combos-bhajia-and-passion-juice",
+    "category": "food-combos",
+    "name": "Bhajia + Passion Juice",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Bhajia_Combos/Bhajia_and_Passion_Juice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-bhajia-and-soda-bhajia-and-pepsi",
+    "category": "food-combos",
+    "name": "Bhajia + Pepsi",
+    "price": 250,
+    "image": "/assets/haile/food/Combos/Bhajia_and_Soda/Bhajia_and_Pepsi.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-tea-and-kebab-brewed-kenyan-tea-and-beef-kebab",
+    "category": "food-combos",
+    "name": "Brewed Kenyan Tea + Beef Kebab",
+    "price": 340,
+    "image": "/assets/haile/food/Combos/Tea_and_Kebab/Brewed_Kenyan_Tea_and_Beef_Kebab.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-coffee-and-cake-cafe-latte-and-black-forest-slice",
+    "category": "food-combos",
+    "name": "Cafe Latte + Black Forest Slice",
+    "price": 650,
+    "image": "/assets/haile/food/Combos/Coffee_and_Cake/Cafe_Latte_and_Black_Forest_Slice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-wrap-and-milkshake-chicken-burrito-and-oreo-milkshake",
+    "category": "food-combos",
+    "name": "Chicken Burrito + Oreo Milkshake",
+    "price": 570,
+    "image": "/assets/haile/food/Combos/Wrap_and_Milkshake/Chicken_Burrito_and_Oreo_Milkshake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-sandwich-and-juice-chicken-sandwich-and-passion-or-cocktail-juice",
+    "category": "food-combos",
+    "name": "Chicken Sandwich + Passion / Cocktail Juice",
+    "price": 400,
+    "image": "/assets/haile/food/Combos/Sandwich_and_Juice/Chicken_Sandwich_and_Passion_or_Cocktail_Juice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-pastry-and-juice-cinnamon-roll-and-passion-or-cocktail-juice",
+    "category": "food-combos",
+    "name": "Cinnamon Roll + Passion / Cocktail Juice",
+    "price": 350,
+    "image": "/assets/haile/food/Combos/Pastry_and_Juice/Cinnamon_Roll_and_Passion_or_Cocktail_Juice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-hotdog-and-juice-hot-dog-and-fresh-juice",
+    "category": "food-combos",
+    "name": "Hot Dog + Fresh Juice",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Hotdog_and_Juice/Hot_Dog_and_Fresh_Juice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-hotdog-combos-hotdog-and-passion-juice",
+    "category": "food-combos",
+    "name": "Hotdog + Passion Juice",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Hotdog_Combos/Hotdog_and_Passion_Juice.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-coffee-and-samosas-iced-coffee-and-2-beef-samosas",
+    "category": "food-combos",
+    "name": "Iced Coffee + 2 Beef Samosas",
+    "price": 480,
+    "image": "/assets/haile/food/Combos/Coffee_and_Samosas/Iced_Coffee_and_2_Beef_Samosas.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-cake-and-milkshake-red-velvet-slice-and-vanilla-milkshake",
+    "category": "food-combos",
+    "name": "Red Velvet Slice + Vanilla Milkshake",
+    "price": 700,
+    "image": "/assets/haile/food/Combos/Cake_and_Milkshake/Red_Velvet_Slice_and_Vanilla_Milkshake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-kebab-and-soda-tavis-beef-kebab-and-pepsi",
+    "category": "food-combos",
+    "name": "Tavis Beef Kebab + Pepsi",
+    "price": 170,
+    "image": "/assets/haile/food/Combos/Kebab_and_Soda/Tavis_Beef_Kebab_and_Pepsi.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-lunch-combos-tavis-pilau-with-freshly-made-salsa-and-iced-tea",
+    "category": "food-combos",
+    "name": "Tavis Pilau with Freshly Made Salsa + Iced Tea",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Lunch_Combos/Tavis_Pilau_with_Freshly_Made_Salsa_and_Iced_Tea.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-combos-lunch-combos-vegetable-rice-and-beef-bourguignon-and-vanilla-milkshake",
+    "category": "food-combos",
+    "name": "Vegetable Rice + Beef Bourguignon + Vanilla Milkshake",
+    "price": null,
+    "image": "/assets/haile/food/Combos/Lunch_Combos/Vegetable_Rice_and_Beef_Bourguignon_and_Vanilla_Milkshake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-traditional-sides-roots-ngwaci-or-nduma",
+    "category": "traditional-sides",
+    "name": "Ngwaci / Nduma",
+    "price": 100,
+    "image": "/assets/haile/food/Traditional_Sides/Roots/Ngwaci_or_Nduma.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-savoury-pies-chicken-or-meat-pie",
+    "category": "pastries",
+    "name": "Chicken / Meat Pie",
+    "price": 250,
+    "image": "/assets/haile/food/Pastries/Savoury_Pies/Chicken_or_Meat_Pie.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-savoury-pies-chicken-pie-or-meat-pie",
+    "category": "pastries",
+    "name": "Chicken Pie / Meat Pie",
+    "price": 250,
+    "image": "/assets/haile/food/Pastries/Savoury_Pies/Chicken_Pie_or_Meat_Pie.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-scones-and-buns-coconut-crunch",
+    "category": "pastries",
+    "name": "Coconut Crunch",
+    "price": 80,
+    "image": "/assets/haile/food/Pastries/Scones_and_Buns/Coconut_Crunch.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-cookies-cookies",
+    "category": "pastries",
+    "name": "Cookies",
+    "price": 50,
+    "image": "/assets/haile/food/Pastries/Cookies/Cookies.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-croissants-croissant",
+    "category": "pastries",
+    "name": "Croissant",
+    "price": null,
+    "image": "/assets/haile/food/Pastries/Croissants/Croissant.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-croissants-plain-croissant",
+    "category": "pastries",
+    "name": "Plain Croissant",
+    "price": 200,
+    "image": "/assets/haile/food/Pastries/Croissants/Plain_Croissant.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-scones-and-buns-rockbun",
+    "category": "pastries",
+    "name": "Rockbun",
+    "price": 80,
+    "image": "/assets/haile/food/Pastries/Scones_and_Buns/Rockbun.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-scones-and-buns-tea-scone",
+    "category": "pastries",
+    "name": "Tea Scone",
+    "price": 80,
+    "image": "/assets/haile/food/Pastries/Scones_and_Buns/Tea_Scone.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-donuts-chocolate-donut",
+    "category": "donuts",
+    "name": "Chocolate Donut",
+    "price": null,
+    "image": "/assets/haile/food/Pastries/Donuts/Chocolate_Donut.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-donuts-glazed-donut",
+    "category": "donuts",
+    "name": "Glazed Donut",
+    "price": null,
+    "image": "/assets/haile/food/Pastries/Donuts/Glazed_Donut.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-donuts-strawberry-donut",
+    "category": "donuts",
+    "name": "Strawberry Donut",
+    "price": null,
+    "image": "/assets/haile/food/Pastries/Donuts/Strawberry_Donut.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-cakes-black-forest-cake",
+    "category": "cakes-muffins",
+    "name": "Black Forest Cake",
+    "price": 300,
+    "image": "/assets/haile/food/Pastries/Cakes/Black_Forest_Cake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-muffins-chocolate-muffin",
+    "category": "cakes-muffins",
+    "name": "Chocolate Muffin",
+    "price": null,
+    "image": "/assets/haile/food/Pastries/Muffins/Chocolate_Muffin.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-cakes-lemon-cake",
+    "category": "cakes-muffins",
+    "name": "Lemon Cake",
+    "price": 300,
+    "image": "/assets/haile/food/Pastries/Cakes/Lemon_Cake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-cakes-marble-cake",
+    "category": "cakes-muffins",
+    "name": "Marble Cake",
+    "price": 200,
+    "image": "/assets/haile/food/Pastries/Cakes/Marble_Cake.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-muffins-muffin",
+    "category": "cakes-muffins",
+    "name": "Muffin",
+    "price": 100,
+    "image": "/assets/haile/food/Pastries/Muffins/Muffin.png",
+    "note": "From the Haile food poster collection."
+  },
+  {
+    "id": "haile-food-pastries-cakes-red-velvet-cake",
+    "category": "cakes-muffins",
+    "name": "Red Velvet Cake",
+    "price": 300,
+    "image": "/assets/haile/food/Pastries/Cakes/Red_Velvet_Cake.png",
+    "note": "From the Haile food poster collection."
+  }
+]

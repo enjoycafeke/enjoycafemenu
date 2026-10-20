@@ -31,10 +31,10 @@ export function SearchPanel({ open, onClose, branchId, categories, products, onO
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search menu…"
-          className="w-full rounded-2xl border border-white/10 bg-white/[0.055] py-4 pl-12 pr-4 text-base font-semibold text-white outline-none transition placeholder:text-white/28 focus:border-[#d9253d]/70"
+          className="search-field w-full rounded-2xl border border-white/10 bg-white/[0.055] py-4 pl-12 pr-4 text-base font-semibold text-white outline-none transition placeholder:text-white/28 focus:border-[#d9253d]/70"
         />
       </label>
-      <div className="mt-5 grid gap-2 sm:grid-cols-2">
+      <div className="search-grid mt-5 grid gap-2 sm:grid-cols-2">
         {results.map((product) => {
           const category = categories.find((item) => item.id === product.category);
           const price = product.prices[branchId];
@@ -43,7 +43,7 @@ export function SearchPanel({ open, onClose, branchId, categories, products, onO
             <button
               key={product.id}
               type="button"
-              className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-left transition hover:bg-white/[0.07]"
+              className="search-result-card flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-left transition hover:bg-white/[0.07]"
               onClick={() => {
                 onOpenProduct(product);
                 onClose();

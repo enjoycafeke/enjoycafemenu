@@ -48,9 +48,9 @@ export function FeedbackPanel({ open, onClose, branchId, onSaved }: FeedbackPane
 
   return (
     <ModalShell open={open} onClose={onClose} title="Rate Your Experience">
-      <div className="space-y-5">
+      <div className="feedback-stack space-y-5">
         {FEEDBACK_AREAS.map((area) => (
-          <div key={area} className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4">
+          <div key={area} className="rating-row flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4">
             <strong className="text-sm text-white">{area}</strong>
             <div className="flex gap-1" aria-label={`Rate ${area}`}>
               {[1, 2, 3, 4, 5].map((score) => {
@@ -59,7 +59,7 @@ export function FeedbackPanel({ open, onClose, branchId, onSaved }: FeedbackPane
                   <button
                     key={score}
                     type="button"
-                    className="p-1"
+                    className="star-button p-1"
                     onClick={() => setRatings((current) => ({ ...current, [area]: score }))}
                     aria-label={`${score} star${score === 1 ? '' : 's'}`}
                   >

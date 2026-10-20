@@ -33,7 +33,7 @@ describe('Enjoy Cafe menu data', () => {
 
   it('gives every product an item-specific visual and fallback', () => {
     for (const item of PRODUCTS) {
-      expect(item.image).toContain('loremflickr.com/960/720/');
+      expect(item.image.startsWith('/assets/haile/') || item.image.startsWith('/brand/')).toBe(true);
       expect(item.fallbackImage.length).toBeGreaterThan(0);
     }
   });

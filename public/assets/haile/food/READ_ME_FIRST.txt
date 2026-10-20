@@ -1,0 +1,1 @@
+These are the EXACT ten panels of the latest generated collage, cropped without resizing or regenerating. Some panels do not correspond to the actual Haile Food Menu and some displayed prices are unsupported. Treat these as draft artwork, not verified publication-ready menu posters. The six named donut flavours from the source menu are not present in this collage.
